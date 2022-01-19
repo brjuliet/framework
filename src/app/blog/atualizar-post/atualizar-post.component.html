@@ -1,0 +1,34 @@
+<mat-card>
+
+  <div *ngIf="formulario">
+
+    <mat-card class="example-card">
+      <form [formGroup] ="formulario" (ngSubmit)="atualizarFormulario()">
+      <mat-card-title>Post´s</mat-card-title>
+      <mat-card-subtitle>Atualizar o post</mat-card-subtitle>
+      <mat-card-content>
+        <div>
+          <mat-form-field>
+            <mat-label>Titulo</mat-label>
+            <input type="text" matInput formControlName="title" placeholder="Digite o titulo do Post">
+          </mat-form-field>
+        </div>
+
+        <div>
+          <mat-form-field appearance="fill">
+            <mat-label>Post</mat-label>
+            <textarea type="text" matInput formControlName="body" rows="20" placeholder="Digite o Post"></textarea>
+          </mat-form-field>
+        </div>
+      </mat-card-content>
+      <mat-card-actions>
+        <button type="submit" mat-stroked-button color="primary">Atualizar</button>
+        <button mat-stroked-button type="button" (click)="VoltarListagem()">Voltar</button>
+      </mat-card-actions>
+    </form>
+    </mat-card>
+
+  </div>
+</mat-card>
+
+

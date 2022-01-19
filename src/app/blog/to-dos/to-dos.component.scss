@@ -1,0 +1,35 @@
+table {
+  width: 100%;
+}
+
+.loading-spinner {
+  padding: 25px;
+  background: rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overflow-post {
+  max-width: 25ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cabecalho {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.text-inside-grid {
+  position: absolute;
+  left: 5px;
+}
+
+.button-inside-grid {
+  position: absolute;
+  right: 5px;
+}
+
+
